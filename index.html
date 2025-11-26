@@ -1,133 +1,138 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume — Your Name</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>رزومه — نام شما</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- اگر می‌خواهی قلم زیباتر باشه، می‌تونی گوگل فونت فعال کنی -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <article class="wrap">
-
-    <header>
-      <div class="avatar">YN</div>
-      <div class="hdr-info">
-        <div class="name">Your Name</div>
-        <div class="tagline">GIS Student · Web Mapping · Spatial Analysis</div>
-        <div class="muted">Motivated GIS student experienced with QGIS, Leaflet and Python.</div>
-      </div>
-    </header>
-
-    <aside class="side">
-
-      <div class="card">
-        <div class="section-title">Contact</div>
-        <div class="contact-item"><strong>Email:</strong> <span class="muted">you@example.com</span></div>
-        <div class="contact-item"><strong>Phone:</strong> <span class="muted">+1 555 555 55</span></div>
-        <div class="contact-item"><strong>Location:</strong> <span class="muted">City, Country</span></div>
-        <div class="contact-item"><strong>GitHub:</strong> <span class="muted">github.com/yourname</span></div>
+  <div class="container">
+    <aside class="sidebar" aria-label="اطلاعات تماس و مهارت‌ها">
+      <div class="photo">
+        <!-- اگر عکس داری: <img src="profile.jpg" alt="عکس پروفایل"> -->
+        <div class="initials">ن</div>
       </div>
 
-      <div class="card">
-        <div class="section-title">Skills</div>
-        <div class="skills">
-          <span class="skill">QGIS</span>
-          <span class="skill">Leaflet</span>
-          <span class="skill">GeoJSON</span>
-          <span class="skill">Python</span>
-          <span class="skill">SQL</span>
+      <h1 class="fullname">نام شما</h1>
+      <p class="role">دانشجوی GIS · وب‌مَپینگ · تحلیل مکانی</p>
+
+      <div class="contact card">
+        <h3>تماس</h3>
+        <ul>
+          <li><strong>ایمیل:</strong> you@example.com</li>
+          <li><strong>تلفن:</strong> +98 912 123 4567</li>
+          <li><strong>وب:</strong> your-website.com</li>
+          <li><strong>گیت‌هاب:</strong> github.com/yourname</li>
+          <li><strong>مکان:</strong> شهر، کشور</li>
+        </ul>
+      </div>
+
+      <div class="skills card">
+        <h3>مهارت‌ها</h3>
+        <div class="skill-list">
+          <span>QGIS</span>
+          <span>Leaflet</span>
+          <span>GeoJSON</span>
+          <span>Python (geopandas)</span>
+          <span>PostGIS / SQL</span>
+          <span>Cartography</span>
         </div>
       </div>
 
-      <div class="card">
-        <div class="section-title">Education</div>
-        <strong>B.Sc. in Geography</strong>
-        <div class="muted">University — 2021–Present</div>
+      <div class="education card">
+        <h3>تحصیلات</h3>
+        <div class="edu-item">
+          <strong>کارشناسی جغرافیا</strong>
+          <div class="muted">دانشگاه مثال — 2021 – اکنون</div>
+        </div>
       </div>
 
-      <div class="card">
-        <div class="section-title">Languages</div>
-        English — Professional  
-        <br>Persian — Native
+      <div class="languages card">
+        <h3>زبان‌ها</h3>
+        <ul>
+          <li>فارسی — بومی</li>
+          <li>انگلیسی — مسلط</li>
+        </ul>
       </div>
 
+      <div class="download card">
+        <a class="btn" href="#" onclick="window.print();return false;">دانلود / پرینت PDF</a>
+      </div>
     </aside>
 
-    <main class="main">
-
-      <section class="card">
-        <h3>Profile</h3>
-        <p>
-          Enthusiastic GIS student with hands-on experience creating web maps and spatial analysis.
-          Skilled in QGIS, Leaflet and Python. Looking for internships to expand experience.
-        </p>
+    <main class="main" role="main">
+      <section class="about card">
+        <h2>خلاصه</h2>
+        <p>دانشجوی GIS با علاقه به ساخت نقشه‌های تعاملی و تحلیل داده‌های مکانی. تجربه کار با QGIS، Leaflet و کتابخانه‌های پایتون برای پردازش داده‌های مکانی. آماده کارآموزی و پروژه‌های تحقیقاتی.</p>
       </section>
 
-      <section class="card">
-        <div class="section-title">Experience</div>
+      <section class="experience card">
+        <h2>تجربه</h2>
 
-        <div class="job">
-          <div class="meta">
-            <div>
-              <div class="company">GIS Intern — Example Org</div>
-              <div class="muted">City, Country</div>
-            </div>
-            <div class="period">Jun 2024 – Aug 2024</div>
+        <article class="job">
+          <div class="job-head">
+            <div class="job-title">کارآموز GIS — سازمان مثال</div>
+            <div class="job-date">خرداد 1403 — مرداد 1403</div>
           </div>
+          <p>توسعه نقشه‌های تعاملی با Leaflet و پردازش و پاک‌سازی داده‌های مکانی برای آنالیز محیطی.</p>
           <ul>
-            <li>Built interactive Leaflet maps.</li>
-            <li>Processed spatial data (Shapefile, GeoJSON).</li>
-            <li>Automated workflows using Python.</li>
+            <li>ایجاد نقشه تعاملی با فیلتر و پنجره‌های اطلاعاتی (popups).</li>
+            <li>پردازش GeoJSON و shapefile و آماده‌سازی برای تحلیل در QGIS.</li>
+            <li>اتوماسیون پردازش با پایتون (geopandas).</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="job">
-          <div class="meta">
-            <div>
-              <div class="company">Research Assistant</div>
-              <div class="muted">University Lab</div>
-            </div>
-            <div class="period">Sep 2023 – Dec 2023</div>
+        <article class="job">
+          <div class="job-head">
+            <div class="job-title">دستیار پژوهشی — آزمایشگاه دانشگاه</div>
+            <div class="job-date">شهریور 1402 — آذر 1402</div>
           </div>
-          <ul>
-            <li>Performed raster analysis.</li>
-            <li>Created maps for research projects.</li>
-          </ul>
-        </div>
-
+          <p>جمع‌آوری داده‌های میدانی و انجام تحلیل‌های رستر و وکتور برای مقالات پژوهشی.</p>
+        </article>
       </section>
 
-      <section class="card">
-        <div class="section-title">Projects</div>
-        <div class="projects">
-
+      <section class="projects card">
+        <h2>پروژه‌ها</h2>
+        <div class="project-grid">
           <div class="project">
-            <strong>Local Parks Map</strong>
+            <strong>نقشه پارک‌های محلی</strong>
             <div class="muted">Leaflet • GeoJSON</div>
-            <p>Interactive map showing parks with search and filters.</p>
+            <p>نقشه تعاملی با جستجو، فیلتر و نمایش اطلاعات امکانات.</p>
           </div>
 
           <div class="project">
-            <strong>Flood Risk Model</strong>
-            <div class="muted">QGIS • Raster Analysis</div>
-            <p>Modeling high-risk areas for flood analysis.</p>
+            <strong>مدل خطر سیل</strong>
+            <div class="muted">QGIS • Raster • Python</div>
+            <p>تحلیل رستر برای تعیین مناطق پرخطر و تهیه نقشه‌های خروجی.</p>
           </div>
-
         </div>
       </section>
 
-      <section class="card">
-        <div class="section-title">Certifications</div>
-        Introduction to GIS — Online Course  
-        <br>Web Mapping with Leaflet — Workshop
+      <section class="cert card">
+        <h2>دوره‌ها و گواهی‌ها</h2>
+        <ul>
+          <li>مقدمات GIS — دوره آنلاین</li>
+          <li>وب‌مَپینگ با Leaflet — کارگاه</li>
+        </ul>
       </section>
 
+      <section class="contact-me card">
+        <h2>در ارتباط باشید</h2>
+        <p>اگر می‌خواهید روی پروژه‌ای همکاری کنیم یا سوالی دارید، از طریق ایمیل یا گیت‌هاب با من تماس بگیرید.</p>
+        <div class="contact-actions">
+          <a href="mailto:you@example.com" class="btn-outline">ایمیل</a>
+          <a href="https://github.com/yourname" target="_blank" class="btn">گیت‌هاب</a>
+        </div>
+      </section>
     </main>
+  </div>
 
-    <footer>
-      References available upon request · Portfolio: your-website.com
-    </footer>
-
-  </article>
+  <!-- اسکریپت کمکی برای RTL صحیح در چاپ یا تعاملات ساده -->
+  <script>
+    // nothing needed now — placeholder for future enhancements
+  </script>
 </body>
 </html>
