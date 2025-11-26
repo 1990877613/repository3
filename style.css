@@ -1,0 +1,150 @@
+:root{
+    --bg:#f4f7fb;
+    --card:#fff;
+    --accent:#2b7cff;
+    --muted:#667085;
+    --text:#0f1724;
+    --radius:10px;
+    --gap:20px;
+  }
+  
+  body{
+    margin:0;
+    font-family:Inter, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    display:flex;
+    justify-content:center;
+    padding:28px;
+  }
+  
+  .wrap{
+    width:100%;
+    max-width:900px;
+    background:#ffffff;
+    border-radius:var(--radius);
+    box-shadow:0 8px 30px rgba(10,20,40,0.06);
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:var(--gap);
+    overflow:hidden;
+  }
+  
+  header{
+    grid-column:1/-1;
+    display:flex;
+    gap:18px;
+    align-items:center;
+    padding:28px;
+  }
+  
+  .avatar{
+    width:92px;
+    height:92px;
+    background:var(--accent);
+    border-radius:12px;
+    color:white;
+    font-size:28px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .hdr-info .name{
+    font-size:1.45rem;
+    font-weight:800;
+  }
+  
+  .tagline{
+    color:var(--muted);
+    margin-top:6px;
+  }
+  
+  .side, .main{
+    padding:20px 24px;
+  }
+  
+  .card{
+    background:var(--card);
+    padding:14px;
+    border-radius:8px;
+    border:1px solid rgba(0,0,0,0.05);
+    margin-bottom:12px;
+  }
+  
+  .section-title{
+    text-transform:uppercase;
+    font-size:0.78rem;
+    color:var(--muted);
+    margin-bottom:8px;
+    letter-spacing:0.08em;
+  }
+  
+  .contact-item{
+    margin:6px 0;
+    font-size:0.9rem;
+  }
+  
+  .muted{color:var(--muted);}
+  
+  .skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  
+  .skill{
+    background:#eef6ff;
+    padding:6px 10px;
+    border-radius:20px;
+    color:var(--accent);
+    font-weight:600;
+    font-size:0.86rem;
+  }
+  
+  .job .meta{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+  }
+  
+  .company{font-weight:700;}
+  
+  .period{color:var(--muted);}
+  
+  ul{margin-top:8px;}
+  
+  .projects{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+  }
+  
+  .project{
+    padding:10px;
+    background:#fff;
+    border-radius:8px;
+    border:1px solid rgba(0,0,0,0.05);
+  }
+  
+  footer{
+    grid-column:1/-1;
+    padding:14px 24px;
+    border-top:1px dashed rgba(0,0,0,0.1);
+    color:var(--muted);
+    font-size:0.9rem;
+  }
+  
+  @media (max-width:880px){
+    .wrap{
+      grid-template-columns:1fr;
+    }
+    .projects{
+      grid-template-columns:1fr;
+    }
+    body{
+      padding:12px;
+    }
+  }
+  
